@@ -1,0 +1,6 @@
+default['mysql']['username'] = 'username'
+default['mysql']['password'] = 'password'
+default['mysql']['database']['dev'] = 'laravel_dev'
+default['mysql']['database']['stg'] = 'laravel_stg'
+default['mysql']['database']['prod'] = 'laravel_prod'
+default['mysql']['database']['test'] = 'laravel_test'
