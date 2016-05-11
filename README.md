@@ -1,4 +1,4 @@
-# Setup 
+# Setup のやり方
 
 ## Vagrant box のインストール
 
