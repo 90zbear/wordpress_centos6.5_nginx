@@ -17,3 +17,28 @@ $ vagrant plugin install vagrant-omnibus
 ```
 vagrant up
 ```
+
+## Mysql のバックアップをコミットする
+
+* db は `wordpress_dev` を使っている前提
+
+```
+// vagrant に入る
+$ vagrant ssh
+
+// dump を作る
+$ cd /var/www/html/script
+$ sh dump.sh
+```
+
+`/var/www/html/script` に `backup.dump` が作成されるのでこれをコミットする
+
+## Mysql のバックアップを復元する
+
+```
+// vagrant に入る
+$ vagrant ssh
+
+$ cd /var/www/html/script
+$ sh restore.sh
+```
