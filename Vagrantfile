@@ -7,6 +7,7 @@
 # you're doing.
 Vagrant.configure(2) do |config|
   config.vm.box = "centos6.5"
+  config.vm.box_url = "https://github.com/2creatives/vagrant-centos/releases/download/v6.5.3/centos65-x86_64-20140116.box"
   config.vm.network "private_network", ip: "192.168.44.22"
   config.vm.synced_folder ".", "/var/www/meetia", :create => true, :owner => 'vagrant', :group => 'vagrant', :mount_options => ['dmode=777', 'fmode=666']
 
